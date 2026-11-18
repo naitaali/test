@@ -1,0 +1,237 @@
+
+/* Paramètres généraux */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #26364a;
+    line-height: 1.7;
+}
+
+.container {
+    width: 85%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* Navigation */
+
+header {
+    background: #142b4a;
+    padding: 18px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #5cc0d0;
+}
+
+/* Accueil */
+
+.hero {
+    background: #edf4f8;
+    padding: 85px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.subtitle {
+    color: #3196a9;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #142b4a;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #3196a9;
+}
+
+.hero h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.university {
+    margin: 20px 0;
+    color: #52657b;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 7px solid white;
+}
+
+/* Boutons */
+
+.btn {
+    display: inline-block;
+    background: #142b4a;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #3196a9;
+}
+
+/* Sections */
+
+.section {
+    padding: 75px 0;
+}
+
+.section h2 {
+    color: #142b4a;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.section p {
+    margin-bottom: 15px;
+}
+
+.light {
+    background: #f3f7fb;
+}
+
+/* Cartes */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e0e7ef;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #287b98;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.subheading {
+    margin-top: 35px;
+    color: #142b4a;
+}
+
+/* Publications */
+
+.publication {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 4px solid #3196a9;
+    border-radius: 5px;
+}
+
+.publication h3 {
+    color: #142b4a;
+    margin-bottom: 10px;
+}
+
+/* Pied de page */
+
+footer {
+    background: #142b4a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Adaptation mobile */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}
